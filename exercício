@@ -1,0 +1,110 @@
+#include <iostream>
+using namespace std;
+
+int a;
+int b;
+const double PI = 3.14159;
+int raio;
+
+//variaveis array 5
+
+float notas[5];
+float soma;
+float media;
+float maior = 0;
+float menor = 10;
+
+//variaveis array 
+
+float maior_array = 0;
+float menor_array = 10; 
+int array[10]= {11,46,8,12,60,27,22,9,77,15};
+
+//variavel tabuada (n)
+
+int n;
+
+
+
+int main(){
+    
+    												//CONTAS
+    
+    cout <<"Diga o valor de a: " <<endl; 
+        cin >> a;
+    cout <<"Diga o valor de b: " <<endl; 
+        cin >> b;
+ 
+    cout << a+b <<endl; //adiçao
+    cout << a-b <<endl; //subtraçao
+    cout << a*b <<endl; //multiplicaçao
+
+    if(a !=0){
+        cout << a/b <<endl; //divisao
+        cout << a%b <<endl; //resto da divisao
+    }else{
+        cout <<"Nao podemos dividir por 0" <<endl; //informa que nao podemos dividir por 0
+    }
+    
+                            //AREA DO CIRCULO
+    
+    cout << "Agora a area do circulo " <<endl;
+    cout << "Qual o valor do raio: " <<endl; 
+        cin >> raio;
+
+    cout << "A area do circulo e: ";
+    cout << PI * raio*raio <<endl; //formula para calcular a area do circulo
+    
+    
+                             //NOTAS DOS ALUNOS
+    
+
+    cout << "Insira as notas dos alunos abaixo: " <<endl;
+  
+    for(int x=0; x<5; x++){
+        cout <<"Aluno" << x + 1 << ":" <<endl;
+        cin >> notas[x];
+        soma += notas[x]; // soma as notas todos q escolhemos para armazenar no ciclo for
+        media = soma/5; //media 
+        
+        if(notas[x] < menor){  
+            menor = notas[x];
+        }
+        if(notas[x] > maior){
+            maior = notas[x];
+        }
+    }
+    
+    cout <<"Media: " << media <<endl;
+    cout <<"Menor: " << menor <<endl;
+    cout <<"Maior: " << maior <<endl;
+    
+                             //ARRAY 
+
+    cout << "                            máximo e mínimo do array:" << endl;
+    for (int z = 0; z < 10; z++) {
+        if (array[z] < menor_array) {
+            maior_array = array[z];
+        }
+        if (array[z] > maior_array) {
+           menor_array = array[z];
+        }
+    }
+
+    cout << "Menor: " <<maior_array << endl;
+    cout << "Maior: " << menor_array << endl;
+
+                            //Tabuada
+
+    cout << "                              Tabuada    " << endl;
+    cout << "Escreva um valor: ";
+    cin >> n;
+    cout << "Tabuada do " << n << ":" << endl;
+    for (int k = 1; k <= 10; ++k) {
+        cout << n << " x " << k << " = " << n * k << endl;
+    }
+
+
+
+    return 0;
+}
