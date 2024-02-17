@@ -3,10 +3,10 @@ using namespace std;
 
 int a;
 int b;
-const double PI = 3.14159;
 int raio;
+const double PI = 3.14159;
 
-//variaveis array 5
+//variaveis array das notas
 
 float notas[5];
 float soma;
@@ -14,7 +14,7 @@ float media;
 float maior = 0;
 float menor = 10;
 
-//variaveis array 
+//variaveis array (outro array e não o das notas)
 
 float maior_array = 0;
 float menor_array = 10; 
@@ -100,8 +100,8 @@ int main(){
     cout << "Escreva um valor: ";
     cin >> n;
     cout << "Tabuada do " << n << ":" << endl;
-    for (int k = 1; k <= 10; ++k) {
-        cout << n << " x " << k << " = " << n * k << endl;
+    for (int t = 1; t <= 10; ++t) {
+        cout << n << " x " << t << " = " << n * t << endl;
     }
 
 
