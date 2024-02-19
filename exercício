@@ -6,30 +6,26 @@ int b;
 int raio;
 const double PI = 3.14159;
 
-//variaveis array das notas
-
 float notas[5];
 float soma;
 float media;
 float maior = 0;
 float menor = 10;
 
-//variaveis array (outro array e não o das notas)
+//outro array e não o das notas
 
 float maior_array = 0;
 float menor_array = 10; 
 int array[10]= {11,46,8,12,60,27,22,9,77,15};
 
-//variavel tabuada (n)
+//tabuada
 
 int n;
-
-
 
 int main(){
     
     												//CONTAS
-    
+    cout << "CONTAS" << endl;
     cout <<"Diga o valor de a: " <<endl; 
         cin >> a;
     cout <<"Diga o valor de b: " <<endl; 
@@ -48,7 +44,7 @@ int main(){
     
                             //AREA DO CIRCULO
     
-    cout << "Agora a area do circulo " <<endl;
+    cout << "AREA DO CIRCULO " <<endl;
     cout << "Qual o valor do raio: " <<endl; 
         cin >> raio;
 
@@ -57,7 +53,7 @@ int main(){
     
     
                              //NOTAS DOS ALUNOS
-    
+    cout << "NOTAS" << endl;
 
     cout << "Insira as notas dos alunos abaixo: " <<endl;
   
@@ -81,7 +77,7 @@ int main(){
     
                              //ARRAY 
 
-    cout << "                            máximo e mínimo do array:" << endl;
+    cout << "MÁXIMO E MÍNIMO DO ARRAY:" << endl;
     for (int z = 0; z < 10; z++) {
         if (array[z] < menor_array) {
             maior_array = array[z];
