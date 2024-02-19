@@ -25,7 +25,7 @@ int n;
 int main(){
     
     												//CONTAS
-    cout << "CONTAS" << endl;
+    cout << "            CONTAS" << endl;
     cout <<"Diga o valor de a: " <<endl; 
         cin >> a;
     cout <<"Diga o valor de b: " <<endl; 
@@ -44,7 +44,7 @@ int main(){
     
                             //AREA DO CIRCULO
     
-    cout << "AREA DO CIRCULO " <<endl;
+    cout << "            AREA DO CIRCULO " <<endl;
     cout << "Qual o valor do raio: " <<endl; 
         cin >> raio;
 
@@ -53,7 +53,7 @@ int main(){
 
                             //Tabuada
 
-    cout << "                              Tabuada    " << endl;
+    cout << "            Tabuada" << endl;
     cout << "Escreva um valor: ";
     cin >> n;
     cout << "Tabuada do " << n << ":" << endl;
@@ -63,7 +63,7 @@ int main(){
 
                            //NOTAS
 
-    cout << "NOTAS" << endl;
+    cout << "            NOTAS" << endl;
 
     cout << "Insira as notas dos alunos abaixo: " <<endl;
   
@@ -87,7 +87,7 @@ int main(){
     
                              //ARRAY 
 
-    cout << "MÁXIMO E MÍNIMO DO ARRAY:" << endl;
+    cout << "            MÁXIMO E MÍNIMO DO ARRAY:" << endl;
     for (int z = 0; z < 10; z++) {
         if (array[z] < menor_array) {
             maior_array = array[z];
