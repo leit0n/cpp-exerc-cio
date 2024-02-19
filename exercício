@@ -35,7 +35,7 @@ int main(){
     cout << a-b <<endl; //subtraçao
     cout << a*b <<endl; //multiplicaçao
 
-    if(a !=0){
+    if(a !=0, b !=0){
         cout << a/b <<endl; //divisao
         cout << a%b <<endl; //resto da divisao
     }else{
