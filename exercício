@@ -50,9 +50,19 @@ int main(){
 
     cout << "A area do circulo e: ";
     cout << PI * raio*raio <<endl; //formula para calcular a area do circulo
-    
-    
-                             //NOTAS DOS ALUNOS
+
+                            //Tabuada
+
+    cout << "                              Tabuada    " << endl;
+    cout << "Escreva um valor: ";
+    cin >> n;
+    cout << "Tabuada do " << n << ":" << endl;
+    for (int t = 1; t <= 10; ++t) {
+        cout << n << " x " << t << " = " << n * t << endl;
+    }
+
+                           //NOTAS
+
     cout << "NOTAS" << endl;
 
     cout << "Insira as notas dos alunos abaixo: " <<endl;
@@ -89,16 +99,6 @@ int main(){
 
     cout << "Menor: " <<maior_array << endl;
     cout << "Maior: " << menor_array << endl;
-
-                            //Tabuada
-
-    cout << "                              Tabuada    " << endl;
-    cout << "Escreva um valor: ";
-    cin >> n;
-    cout << "Tabuada do " << n << ":" << endl;
-    for (int t = 1; t <= 10; ++t) {
-        cout << n << " x " << t << " = " << n * t << endl;
-    }
 
     return 0;
 }
