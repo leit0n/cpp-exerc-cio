@@ -100,7 +100,5 @@ int main(){
         cout << n << " x " << t << " = " << n * t << endl;
     }
 
-
-
     return 0;
 }
